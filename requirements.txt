@@ -4,3 +4,4 @@ matplotlib
 geopy
 math
 seaborn
+sklearn
