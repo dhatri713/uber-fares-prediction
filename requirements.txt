@@ -5,3 +5,4 @@ geopy
 math
 seaborn
 sklearn
+-e .
