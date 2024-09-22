@@ -5,4 +5,5 @@ geopy
 math
 seaborn
 sklearn
+flask
 -e .

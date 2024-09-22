@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Fare Prediction</title>
+</head>
+
+<body>
+    <h1>Uber Fare Prediction</h1>
+    <form action="{{ url_for('predict')}}" method="post">
+
+        <div class="form-group">
+            <label for="pickup_datetime">Pickup Datetime</label>
+            <input type="text" id="pickup_datetime" name="pickup_datetime">
+        </div>
+        <div class="form-group">
+            <label for=pickup_longitude">Pickup Longitude</label>
+            <input type="number" id="pickup_longitude" name="pickup_longitude">
+        </div>
+        <div class="form-group">
+            <label for="pickup_latitude">Pickup Latitude</label>
+            <input type="number" id="pickup_latitude" name="fpickup_latitudelo">
+        </div>
+        <div class="form-group">
+            <label for="dropoff_longitude">Dropoff Longitude</label>
+            <input type="number" id="dropoff_longitude" name="dropoff_longitude">
+        </div>
+        <div class="form-group">
+            <label for="dropoff_latitude">Dropoff Latitude</label>
+            <input type="number" id="dropoff_latitude" name="dropoff_latitude">
+        </div>
+        <div class="form-group">
+            <label for="passenger_count">Passenger Count</label>
+            <input type="number" id="rap" name="passenger_count">
+        </div>
+        <div class="form-group"></div>
+        <input class="btn btn-primary" type="submit" value="Predict the fare" required />
+        </div>
+    </form>
+
+    <h2>Uber fare: {{ result }}</h2>
+
+
+</body>
+
+</html>
